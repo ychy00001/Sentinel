@@ -115,4 +115,12 @@ public class TransportConfig {
         }
         return apiPath;
     }
+
+    /**
+     * 添加nacos地址nacos.address
+     */
+    public static final String CONFIG_NACOS_ADDRESS = "nacos.address";
+    public static String getNacosAddr() {
+        return  SentinelConfig.getConfig(CONFIG_NACOS_ADDRESS);
+    }
 }
